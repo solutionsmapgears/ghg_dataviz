@@ -27,7 +27,7 @@
 	          minZoom: 4
 	      })
 	      .addLayer(new wax.leaf.connector(tilejson))
-	      .setView(new L.LatLng(46, -71), 6);
+	      .setView(new L.LatLng(46, -71), 5);
 
               popup = new L.Popup();
 
@@ -55,7 +55,7 @@
                        popup.setContent(popupContent);
 
                        map.openPopup(popup);
-                       transition();
+     
                    });
                           
                    feature.each(function(d){
